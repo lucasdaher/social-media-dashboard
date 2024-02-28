@@ -75,7 +75,7 @@ function App() {
           />
         </section>
 
-        <section className="flex flex-col justify-center items-start mx-auto max-w-[468px] w-full lg:max-w-[1440px] lg:mx-auto lg:px-40 mt-10 px-6">
+        <section className="flex flex-col justify-center items-start mx-auto max-w-[468px] w-full lg:max-w-[1440px] lg:mx-auto lg:px-40 mt-10 px-6 mb-12">
           <div className="">
             <h1
               className={`text-2xl font-bold mb-6 transition-all duration-200 ${
@@ -93,6 +93,7 @@ function App() {
               percentValue={3}
               value={87}
               scoreType="green"
+              mode={mode}
             />
 
             <OverviewCard
@@ -101,6 +102,7 @@ function App() {
               percentValue={2}
               value={52}
               scoreType="red"
+              mode={mode}
             />
 
             <OverviewCard
@@ -109,6 +111,7 @@ function App() {
               percentValue={2257}
               value={5462}
               scoreType="green"
+              mode={mode}
             />
 
             <OverviewCard
@@ -117,6 +120,7 @@ function App() {
               percentValue={1375}
               value={"52k"}
               scoreType="green"
+              mode={mode}
             />
 
             <OverviewCard
@@ -125,6 +129,7 @@ function App() {
               percentValue={303}
               value={117}
               scoreType="green"
+              mode={mode}
             />
 
             <OverviewCard
@@ -133,6 +138,7 @@ function App() {
               percentValue={553}
               value={507}
               scoreType="green"
+              mode={mode}
             />
 
             <OverviewCard
@@ -141,6 +147,7 @@ function App() {
               percentValue={19}
               value={107}
               scoreType="red"
+              mode={mode}
             />
 
             <OverviewCard
@@ -149,6 +156,7 @@ function App() {
               percentValue={12}
               value={1407}
               scoreType="red"
+              mode={mode}
             />
           </div>
         </section>

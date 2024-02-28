@@ -7,8 +7,8 @@ type OverviewCardProps = {
   alt?: string;
   value: number | string;
   percentValue: number;
-
   scoreType?: string;
+  mode?: string | "light" | "dark";
 };
 
 const OverviewCard = ({
@@ -18,18 +18,35 @@ const OverviewCard = ({
   value,
   percentValue,
   scoreType,
+  mode,
 }: OverviewCardProps) => {
   return (
-    <div className="w-full max-w-none lg:max-w-64 p-6 bg-card rounded-md">
+    <div
+      className={`w-full max-w-none lg:max-w-64 p-6 transition-all duration-200 cursor-pointer ${
+        mode === "light" ? "bg-card-light" : "bg-card"
+      } ${
+        mode === "light" ? "hover:bg-card-light-hover" : "hover:bg-card-hover"
+      } rounded-md`}
+    >
       <div className="flex flex-col justify-between gap-6 w-full">
         <div className="flex justify-between items-center">
-          <h3 className="font-bold text-blue-gray">{name}</h3>
+          <h3
+            className={`font-bold text-sm ${
+              mode === "light" ? "text-pure-gray" : "text-blue-gray"
+            }`}
+          >
+            {name}
+          </h3>
           <img src={icon} alt={alt} />
         </div>
 
         {/* Second Line */}
         <div className="flex justify-between items-center">
-          <h2 className="font-bold text-white text-[2rem] leading-none">
+          <h2
+            className={`font-bold text-[2rem] leading-none transition-all duration-200 ${
+              mode === "light" ? "text-black" : "text-white"
+            }`}
+          >
             {value}
           </h2>
           <div className="flex justify-center items-center gap-1 leading-normal">

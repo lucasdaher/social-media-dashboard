@@ -22,6 +22,7 @@ export default {
         "card-light-hover": "#E1E4F0",
         green: "#1EB589",
         red: "#DC414C",
+
         // Social Media Colors
         "facebook-color": "#178FF5",
         "twitter-color": "#1DA1F2",
