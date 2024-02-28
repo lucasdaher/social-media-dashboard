@@ -93,6 +93,7 @@ function App() {
               percentValue={3}
               value={87}
               scoreType="green"
+              alt="Facebook"
               mode={mode}
             />
 
@@ -102,6 +103,7 @@ function App() {
               percentValue={2}
               value={52}
               scoreType="red"
+              alt="Facebook"
               mode={mode}
             />
 
@@ -111,6 +113,7 @@ function App() {
               percentValue={2257}
               value={5462}
               scoreType="green"
+              alt="Instagram"
               mode={mode}
             />
 
@@ -120,6 +123,7 @@ function App() {
               percentValue={1375}
               value={"52k"}
               scoreType="green"
+              alt="Instagram"
               mode={mode}
             />
 
@@ -129,6 +133,7 @@ function App() {
               percentValue={303}
               value={117}
               scoreType="green"
+              alt="Twitter"
               mode={mode}
             />
 
@@ -138,12 +143,14 @@ function App() {
               percentValue={553}
               value={507}
               scoreType="green"
+              alt="Twitter"
               mode={mode}
             />
 
             <OverviewCard
               name="Likes"
               icon={youtubeIcon}
+              alt="Youtube"
               percentValue={19}
               value={107}
               scoreType="red"
@@ -153,6 +160,7 @@ function App() {
             <OverviewCard
               name="Total Views"
               icon={youtubeIcon}
+              alt="Youtube"
               percentValue={12}
               value={1407}
               scoreType="red"
