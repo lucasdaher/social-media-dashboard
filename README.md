@@ -9,7 +9,6 @@ This is a solution to the [Social media dashboard with theme switcher challenge 
   - [Overview](#overview)
     - [The challenge](#the-challenge)
     - [Links](#links)
-    - [Built with](#built-with)
   - [Author](#author)
 
 ## Overview
@@ -25,11 +24,9 @@ Users should be able to:
 ### Links
 
 - Solution URL: [GitHub](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
-
-### Built with
+- Live Site URL: [Preview Site](https://your-live-site-url.com)
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- GitHub - [Lucas Daher](https://github.com/lucasdaher)
+- Frontend Mentor - [@lucasdaher](https://www.frontendmentor.io/profile/lucasdaher)
