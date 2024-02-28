@@ -1,28 +1,21 @@
-import { useEffect, useState } from "react";
+type HeaderProps = {
+  mode?: string;
+  handleMode?: () => void;
+};
 
-const Header = () => {
-  const [mode, setMode] = useState<string>("dark");
-
-  const handleMode = () => {
-    setMode(mode === "dark" ? "light" : "dark");
-  };
-
-  useEffect(() => {
-    document.body.className = mode === "light" ? "light" : "";
-  }, [mode]);
-
+const Header = ({ mode, handleMode }: HeaderProps) => {
   return (
     <header
-      className={`transition-all duration-300 w-full h-[15.25rem] rounded-header ${
+      className={`transition-all duration-300 w-full h-[15.25rem] rounded-header absolute top-0 left-0 z-0 ${
         mode === "light" ? "bg-background-header-light" : "bg-background-header"
       }`}
     >
-      <div className="flex justify-between items-center header-container max-w-[1440px] mx-auto px-40 py-9">
-        <div className="flex flex-col justify-center items-start gap-1">
+      <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center max-w-[468px] lg:max-w-[1440px] mx-auto px-6 lg:px-40 py-9">
+        <div className="flex flex-col justify-start items-start lg:justify-between lg:gap-1 w-full">
           <h1
             className={`${
               mode === "light" ? "text-black" : "text-white"
-            } font-bold text-3xl transition-all duration-300`}
+            } font-bold text-2xl lg:text-3xl transition-all duration-300 w-full`}
           >
             Social Media Dashboard
           </h1>
@@ -35,7 +28,7 @@ const Header = () => {
           </p>
         </div>
 
-        <div className="flex justify-center items-center gap-3">
+        <div className="flex justify-between lg:justify-end items-center gap-3 w-full mt-11 lg:mt-0">
           <h2
             className={`${
               mode === "light" ? "text-light-gray" : "text-blue-gray"
@@ -44,12 +37,14 @@ const Header = () => {
             Dark Mode
           </h2>
           <button
+            title="Change mode"
+            type="button"
             className={`${
               mode === "light"
                 ? "bg-light-bg-button"
                 : "bg-gradient-to-r from-green-start to-green-stop"
             } rounded-full w-12 h-6 transition-all duration-300 flex justify-center items-center relative outline-none border-none`}
-            onClick={() => handleMode()}
+            onClick={handleMode}
           >
             <div
               className={`w-[1.125rem] h-[1.125rem] rounded-full absolute ${
