@@ -11,7 +11,7 @@ const Header = ({ mode, handleMode }: HeaderProps) => {
       }`}
     >
       <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center max-w-[468px] lg:max-w-[1440px] mx-auto px-6 lg:px-40 py-9">
-        <div className="flex flex-col justify-start items-start lg:justify-between lg:gap-1 w-full">
+        <div className="flex flex-col justify-start items-start lg:justify-between lg:gap-1 w-full mb-5">
           <h1
             className={`${
               mode === "light" ? "text-black" : "text-white"
@@ -28,7 +28,7 @@ const Header = ({ mode, handleMode }: HeaderProps) => {
           </p>
         </div>
 
-        <div className="flex justify-between lg:justify-end items-center gap-3 w-full mt-11 lg:mt-0">
+        <div className="flex justify-between lg:justify-end items-center gap-3 w-full pt-5 lg:mt-0 lg:border-t-0 border-t-2 border-[#333A55]">
           <h2
             className={`${
               mode === "light" ? "text-light-gray" : "text-blue-gray"
